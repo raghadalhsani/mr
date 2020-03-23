@@ -1,0 +1,243 @@
+﻿<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant&display=swap" rel="stylesheet">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+    <!----left section---->
+    <div class="left">
+    <!------logo--------->
+    <div id="logo">
+    <img src="logo2.png">
+    </div>
+    <!-------name----->
+    <div id="name-herro">
+    <p>mariam alnfiai</p>
+    </div>
+    <!-----main menu----->
+    <div class="main-menu">
+       <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#profile">Profile</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#relevant">Relevant Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#comment">comment</a></li>
+        
+        </ul>
+    </div>
+    
+    <div class="communication">
+        <div class="communication-1">
+        <img src="phone-512.png"><span> +966566811101</span>
+            <br>
+
+        <img src="mail.png"><span>maraim-msm@hotmail.com</span>
+            </div>
+</div>
+       </div>
+
+
+<!-----home----->
+<section id="home" class="right home">
+    <h1 class="ml12">"Hi I'm mariam"</h1>
+    <script>
+   // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });</script>
+    <p>Welcom to my page.</p>
+    <a href="index.html#comment">Add your comment</a>
+
+</section>
+
+
+<!-----profile----->
+<section id="profile" class="right profile">
+    <h4><span>Profile</span></h4>
+   
+    <ul type="circle">
+    <li>Vice President for Information Technology Department.</li>
+    <li>Assistant professor in the Information Technology department at the Taif University.</li>
+<li>PhD of Computer Science student (Dalhousie University) with a strong understanding of various algorithms and data structures,and the essential programming skills and knowledge to develop NFC-based smart phone applications.</li>
+<li>Mature student who is self-motivated with strong organizational skills, as well as team and independent research skills.</li>
+<li>Individual with a clear, logical mind and a practical problem-solving approach</li>
+    </ul>
+</section>
+
+
+<!-----Education----->
+<section id="education" class="right education">
+    <h4><span>Education</span></h4>
+    
+   <div class="education-1">
+   <pre><b>PhD of Computer Science Student          2015-2018</b></pre>
+    <p>Dalhousie University, Halifax, Nova Scotia, Canada.</p>
+      <ul type="circle"><li>Developing a text entry method based on braille patterns using a single tap.</li>
+        <li>Developing a Calculator based on Braille using tap gestures.</li>
+        <li> Developing an improved Braille text entry using gestures on smartphone devices.</li>
+        <li>Developing an authentication method for blind people based on Braille using gestures.</li></ul>
+      <pre><b>PhD of Computer Science                  Candidate 2014</b></pre>
+      <p>Dalhousie University, Halifax, Nova Scotia, Canada.</p>
+      <p>Concentration in NFC enabled smartphones for people with disabilities.</p>
+      <pre><b>Master of Computer                        Science 2014</b></pre>
+     <p>Dalhousie University, Halifax, Nova Scotia, Canada.</p>
+      <p>Concentration in NFC enabled smartphones, network computing, and Human Computer Interaction (GPA: A).</p>
+<pre><b>Bachelor of Computer                       Science 2009</b></pre>
+      <p>Taif University, Taif, Saudi Arabia.</p>
+      <p>Concentration in Information Systems (GPA: 3.8/4).</p>
+      </div>
+    </section>
+
+<!-----Relevant----->
+<section id="relevant" class="right relevant">
+    <h4><span>Relevant Skills</span></h4>
+    <div class="relevent-skills">
+    <p><b>Languages</b></p>
+    <ul type="circle"><li>Fluent in Arabic (Reading-Writing-Speaking).</li>
+    <li>Proficient in English (Reading-Writing-Speaking).</li></ul>
+    
+    <p><b>Technical skills</b></p>
+       <ul type="circle"><li>Programming Languages: Java, C++, Android, PHP, HTML, JavaScript, CSS, MySQL, Assembly Language, and Visual Basic.</li>
+       <li>Platforms: MacOS and Windows.</li>
+       <li>Development Tools: Net Beans, Microsoft Visual Studio, Android Studio.</li>
+       <li>Databases: Oracle, SQL.</li>
+       <li>MS Office (MS Word, MS Excel, MS PowerPoint).</li>
+       <li>Sketch.</li></ul>
+
+    <p><b>Social skills</b></p>
+          <ul type="circle"><li>Conducting user studies (controlled study, field study).</li></ul>
+          
+    <p><b>Personal skills and attributes</b></p>
+          <ul type="circle"><li>hardworking.</li>
+          <li>keen observer and quick learner.</li>
+          <li>strong analytical and problem-solving skills.</li></ul>
+          
+    <p><b>Leadership skills</b></p>
+          <ul type="circle"><li>DALConnects – student leadership program.</li></ul>
+          </div>
+    </section>
+
+<!-----Experience----->
+<section id="experience" class="right experience">
+    <h4><span>Work Experience</span></h4>
+    <div class="experience-1">
+    <pre><b>Assistant professor, Taif University                                               2018-now</b></pre>
+    <ul type="circle"><li>Taught Analysis and Design Systems.</li></ul>
+    <pre><b>Advisor Coordinator for the Information Technology Department, Taif University     2018-now</b></pre>
+    <pre><b>Reviewer at the Biomedical and pharmacology journal                                2018-now</b></pre>
+    <pre><b>Volunteer Coordinator for the Computer Science College, Taif University            2018-now</b></pre>
+    <pre><b>Instructor, Taif University                                                        2009-2010</b></pre>
+    
+    <ul type="circle"><li>Taught Introduction to Programming, Analysis and Design Systems, Introduction to Computer Sciences, and Design and Decision Support Systems.</li>
+        <li>Awarded Outstanding Employee award in 2010.</li></ul>
+    <pre><b>Teacher at the International Saudi school in Halifax  20015-2017</b></pre>
+    <ul type="circle"><li>Taught Arabic and Islamic courses.</li></ul>
+
+    <h4><span>Workshop Experience 2018-2019</span></h4>
+    <pre><b>Cloud Computing workshop, Taif University                                         2 days</b></pre>
+    <pre><b>Microsoft office workshop, Taif University                                        2 Months</b></pre>
+    <pre><b>The Fundamentals of Network workshop, Technical College for Girl                  4 days</b></pre>
+    <pre><b>Basic Microsoft office workshop, Taif University                                  3 Weeks</b></pre>
+    <pre><b>Advance Microsoft office workshop, Taif University                                3 Weeks</b></pre>
+    <pre><b>Basic Microsoft office workshop for blind people                                  2 hours</b></pre>
+    <pre><b>Smartphone applications’ workshop for blind people                                2 hours</b></pre>
+    <pre><b>Cyber security workshop                                                           1 hour</b></pre>
+
+    <h4><span>Volunteer Experience</span></h4>
+    <pre><b>Canadian National Institute for the Blind                                         2013-2014</b></pre>
+    <pre><b>Breast cancer society                                                             2014-2015</b></pre>
+    </div>
+    </section>
+
+
+<!-----Publications----->
+<section id="publications" class="right publications">
+    <h4><span>Publications</span></h4>
+    <div class="publications-1">
+    <dl>
+<dt>Alnfiai, M., Sampalli, S., MacKay, B. (2016). VirtualEyez: Developing NFC Technology to Enable</dt><dd>the Visually Impaired to Shop Independently. Proceedings of the 2nd International Conference on Computer and Information Science and Technology (CIST’16). Ottawa, Canada – May 11 – 12, 2016, Recognized as the Best Paper in the Conference.</dd>
+    </br>
+<dt>Alnfiai, M., Sampalli, S., MacKay, B. (2016). VirtualEyez: Developing NFC Technology to</dt> <dd>Enable the Visually Impaired to Shop Independently. International Journal of Electrical and Computer Systems (IJECS),1-13. DOI: 10.11159/ijecs.2016.001</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2016). SingleTapBraille: Developing a text entry method based on</dt> <dd>braille patterns using a single tap. The 11th International Conference on Future Networks and Communications (FNC 2016), Procedia, Computer Science, 248-255. ISSN 1877- 0509, http://dx.doi.org/10.1016/j.procs.2016.08.038.</dd>
+   <br>
+<dt>Alnfiai, M. and Sampalli, S. (2016). An Evaluation of SingleTapBraille Keyboard: A Text Entry</dt> <dd> Method that Utilizes Braille Patterns on Touchscreen Devices. In Proceedings of the 18th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS '16). ACM, New York, NY, USA, 161-169. DOI:http://dx.doi.org/10.1145/2982142.2982161</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2016). BrailleTap Calculator. The 19th International Conference on Human-</dt> <dd> Computer Interaction. HCI International 2017. Vancouver, Canada, 9 - 14 July 2017.</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2017). Improved SingleTapBraille: Developing a single tap text entry method</dt> <dd> based on Grade 1 and 2 braille encoding. The International Journal of Ubiquitous Systems and Pervasive Networks (JUSPN).</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2017). BrailleEnter: A Touch Screen Braille Text Entry Method for the Blind.</dt> <dd>The 8th International Conference on Ambient Systems, Networks and Technologies (ANT 2017), Procedia, Computer Science.</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2017). Social and Communication Apps for the Deaf and Hearing Impaired.</dt> <dd> International Conference on Computer and Applications (ICCA'17), Dubai, Computer Science.</dd>
+    </br>
+<dt>Alnfiai, M., Sampalli, S. (2017). An Evaluation of BrailleEnter keyboard: An Input Method Based on </dt> <dd>Braille Patterns on Touchscreen Devices. International Conference on Computer and Applications (ICCA'17), Dubai, Computer Science.</dd>
+    <br>
+<dt>Alnfiai, M., Sampalli, S. (2018). BraillePassword: Accessible Web Authentication Technique on</dt> <dd> Touchscreen Devices. Journal of Ambient Intelligence and Humanized Computing. Springer. (Pending)</dd>
+        </dl>
+        </div>
+</section>
+<!------comment---->
+<section id="comment" class="right comment">
+    <div class="comment-form">
+    <form action="insert.php" method="post">
+        
+        <input typpe="text" name="name" placeholder="Name" required>
+            <br><br>
+        <input type="email" name="email" placeholder="E-mail">
+            <br><br>
+        <input typpe="text" name="subject" placeholder="Subject">
+                <br><br>
+        <textarea typpe="text" name="comment" placeholder="Comment"></textarea>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+    </div>
+    </section>
+
+<!----javascript--->
+<script>
+    $("#home").css("min-height",$(window).height());
+    $("#profile").css("min-height",$(window).height());
+    $("#education").css("min-height",$(window).height());
+    $("#relevant").css("min-height",$(window).height());
+    $("#experience").css("min-height",$(window).height());
+    $("#publications").css("min-height",$(window).height());
+    $("#comment").css("min-height",$(window).height());
+    </script>
+
+</body>
+
+</html>
